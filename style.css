@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: bisque;
+    margin-top: 50px;
+    flex: 1;
+
+}
+
+.landing-img{
+    background-image: url("images/landing-img.jpg");
+    background-size: 100%;
+    min-height: 300px;
+    width: 1000px;
+    height: 550px;
+    box-shadow: 0 0 100px 100px black inset;
+    flex: 1;
+}
+
+.button{
+    flex: 2;
+}
+
+@media only screen and (max-height: 700px) {
+    .button{ order: 1;}
+    .header{ order: 2;}
+    .landing-img{ order: 3;}
+    }
